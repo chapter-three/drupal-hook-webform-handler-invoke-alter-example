@@ -53,9 +53,9 @@ function MYMODULE_webform_handler_invoke_post_save_alter(\Drupal\webform\Plugin\
     
     // Change the key of some submissions to a different key.
     $query['checkin'] = $query['start_date'];
-    unset($$query['start_date']);
+    unset($query['start_date']);
     $query['checkout'] = $query['end_date'];
-    unset($$query['end_date']);
+    unset($query['end_date']);
     
     // Add some new key/values to our query. This is where you can bring in variables from a different
     // module or some other value that you don't want to, or can't add in the webform UI
